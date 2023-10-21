@@ -1,0 +1,46 @@
+* {
+    margin : 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.881);
+    color: rgb(233, 139, 17);
+}
+
+nav {
+    background-color: bisque;
+    
+}
+
+ul {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+li {
+    list-style: none;
+    margin: auto 10px;
+}
+
+#intro {
+    text-align: center;
+    background-color: beige;
+    width: 98.7vw;
+    height: 98.7vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    
+}
+
+.proj {
+    width: 25%;
+    height: 25% ;
+}
+
+#container0 {
+    display: flex;
+}
