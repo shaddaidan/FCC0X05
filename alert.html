@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alert Button</title>
+</head>
+<body>
+    <button onclick="showAlert()">Click Me</button>
+
+
+    <p id="myText">This is some text.</p>
+    <button onclick="toggleText()">Change Text</button>
+
+    
+    <script>
+
+
+    var originalText = "This is some text.";
+        var newText = "Text changed!";
+        var isTextChanged = false;
+
+        function toggleText() {
+            var textElement = document.getElementById("myText");
+
+            if (isTextChanged) {
+                textElement.innerHTML = originalText;
+            } else {
+                textElement.innerHTML = newText;
+            }
+
+            isTextChanged = !isTextChanged;;
+
+            
+        }
+
+
+
+        function showAlert() {
+            alert('Trying to show Amelia something!');
+        }
+    </script>
+</body>
+</html>
