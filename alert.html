@@ -1,42 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Alert Button</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover::before {
+      content: '< '; /* Add the text you want on hover */
+      color: red; /* Change to the desired color */
+    }
+
+    a:hover::after {
+      content: ' />'; /* Add the text you want on hover */
+      color: red; /* Change to the desired color */
+    }
+  </style>
+  <title>Link Hover Text Change</title>
 </head>
 <body>
-    <button onclick="showAlert()">Click Me</button>
+  <a href="#">Hover over me</a>
 
-
-    <p id="myText">This is some text.</p>
-    <button onclick="toggleText()">Change Text</button>
-
-    
-    <script>
-
-
-    var originalText = "This is some text.";
-        var newText = "Text changed!";
-        var isTextChanged = false;
-
-        function toggleText() {
-            var textElement = document.getElementById("myText");
-
-            if (isTextChanged) {
-                textElement.innerHTML = originalText;
-            } else {
-                textElement.innerHTML = newText;
-            }
-
-            isTextChanged = !isTextChanged;;
-
-            
-        }
-
-
-
-        function showAlert() {
-            alert('Trying to show Amelia something!');
-        }
-    </script>
+  <div class="example">Actual Content</div>
 </body>
 </html>
