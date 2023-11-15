@@ -7,6 +7,10 @@ body{
     text-align: center;
 }
 
+/* nav {
+    position: fixed;
+} */
+
 
 nav ul {
 
@@ -19,6 +23,7 @@ nav ul {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
    
 }
 
@@ -87,22 +92,35 @@ figcaption {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     text-align: center;
+    padding: 0;
+    margin: 0;
+    
    
 
   }
 
 figcaption a {
     color: #fff;
+    display: block;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
     font-size: larger;
+    padding: 20px;
 }
 
 figcaption a:hover {
     color: antiquewhite;
     background-color: black;
     content: ' - Hovered'; /* Add the desired text content */
+}
+
+figcaption a:hover::after {
+    content: "🔫";
+}
+
+figcaption a:hover::before {
+    content: "🙌😓";
 }

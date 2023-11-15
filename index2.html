@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .custom-content:hover::before {
+      content: "Before Content: ";
+      color: red;
+    }
+
+    .custom-content:hover::after {
+      content: " After Content";
+      color: blue;
+    }
+  </style>
+  <title>CSS Content Example</title>
+</head>
+<body>
+
+  <div class="custom-content">
+    Hover over me
+  </div>
+
+</body>
+</html>
